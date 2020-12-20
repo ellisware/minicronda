@@ -46,7 +46,8 @@ RUN /opt/conda/bin/conda install pandas -y && \
     /opt/conda/bin/conda install pymongo -y && \
     /opt/conda/bin/conda install requests -y && \
     /opt/conda/bin/conda install python-dateutil -y && \
-    /opt/conda/bin/python3 -m pip install exchangelib
+    /opt/conda/bin/python3 -m pip install exchangelib -y && \
+    /opt/conda/bin/python3 -m pip install os -y
 
 # Entrypoint is requried to run cron
 ENTRYPOINT ["run.sh"]
